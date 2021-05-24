@@ -5,7 +5,14 @@
     "wait_time": 10,
     "page_load_wait_time": 0,
     "options": [],
-    "capabilities": {},
+    "capabilities": {
+      "build": "PyTest Build 5",
+      "name": "PyTest Tutorial",
+      "platform": "macOS Sierra",
+      "browserName": "Edge",
+      "version": "85",
+      "resolution": "1920x1080"
+    },
     "version": "latest",
     "experimental_options": null,
     "extension_paths": [],
