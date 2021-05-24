@@ -8,21 +8,7 @@ def search(py, query):
     py.get('[name="btnK"]').submit()
     return py.should().contain_title(query)
 
-browser_targets = [
-    {
-        "platform": "Windows 10",
-        "browserName": "Chrome",
-        "version": "85",
-        "resolution": "1280x1024"
-    },
-    {
-        "platform": "Windows 10",
-        "browserName": "Firefox",
-        "version": "81",
-        "resolution": "1280x1024"
-    }
-]
-
+browser_targets = py.config.custom['capabilities']['desktop']
 
 @pytest.mark.parametrize('browser', browser_targets)
 def test_google_search(py: Pylenium, browser):
