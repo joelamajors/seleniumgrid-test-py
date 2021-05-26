@@ -5,22 +5,21 @@ from pylenium.driver import Pylenium
 
 base_url = 'https://ntg.hatfield.marketing'
 
-# def test_desktop_scroll_screenshot(py):
-#     py.visit(base_url)
-#     py.find('.footer-hatfield-links')
 
-#     window_height = py.window_size['height']
-
-#     scroll_length = window_height
-
-    # py.scroll_to(0, scroll_length)
-
-    # py.screenshot()
-
-
-def test_screen_height(py: Pylenium):
+def scroll_and_screenshot(py):
     py.visit(base_url)
-    file = open('ntg_test', 'w+')
-    window_height = py.window_size['height']
-    file.write(str(window_height))
 
+    page_height = py.get('body').get_attribute('scrollHeight')
+    device_height = py.window_size['height'] / 2
+
+    scroll_amount = int(page_height) / int(device_height) - 1
+
+    scroll = 1
+
+    while scroll < scroll_amount:
+        file_name = base_url.strip(
+            'https://').replace('.hatfield.marketing', '')
+        py.scroll_to(0, device_height)
+        py.screenshot(file_name + "/" + file_name + "-" + str(scroll) + '.png')
+        device_height += device_height
+        scroll += 1
