@@ -1,7 +1,33 @@
 import os
 import pytest
+from selenium import webdriver
 from pylenium.driver import Pylenium
 
+
+@pytest.fixture
+def selenium():
+    username = os.getenv('LT_USERNAME')
+    access_key = os.getenv('LT_ACCESS_KEY')
+    remote_url = 'https://{};{}@hub.lambdatest.com/wd/hub'.format(username,access_key)
+
+    desired_caps = {
+        "build": "Pyleniumio test",
+        "name": "Pyleniumio test case", 
+        "platform": "Windows 10", 
+        "browserName": "Chrome",
+        "version": "89.0",
+        "user": username,
+        'accessKey': access_key
+    }
+
+    driver = webdriver.Remote(
+        command_executor=remote_url,
+        desired_capabilities=desired_caps
+    )
+
+    yield driver
+    driver.quit()
+    
 
 base_url = 'https://ntg.hatfield.marketing'
 

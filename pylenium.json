@@ -6,8 +6,8 @@
         "page_load_wait_time": 0,
         "options": [],
         "capabilities": {
-            "build": "PyTest Build 5",
-            "name": "PyTest Tutorial",
+            "build": "PyTest Build Testing",
+            "name": "PyTest Build Testing run",
             "platform": "macOS Sierra",
             "browserName": "Edge",
             "version": "85",
