@@ -33,195 +33,195 @@
         "capabilities": {
             "desktop": [
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "1366x768"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "1366x768"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "1440x900"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "1920x1080"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "2560x1440"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "1366x768"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "1440x900"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "1920x1080"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "89.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "89.0",
+                    "platform": "Windows 10",
                     "resolution": "2560x1440"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "88.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "88.0",
+                    "platform": "Windows 10",
                     "resolution": "1366x768"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "88.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "88.0",
+                    "platform": "Windows 10",
                     "resolution": "1440x900"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "88.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "88.0",
+                    "platform": "Windows 10",
                     "resolution": "1920x1080"
                 },
                 {
-                    "browsername": "MicrosoftEdge",
-                    "browserversion": "88.0",
-                    "system": "Windows 10",
+                    "browserName": "MicrosoftEdge",
+                    "version": "88.0",
+                    "platform": "Windows 10",
                     "resolution": "2560x1440"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "Windows 10",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "Windows 10",
                     "resolution": "1366x768"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "Windows 10",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "Windows 10",
                     "resolution": "1440x900"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "Windows 10",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "Windows 10",
                     "resolution": "1920x1080"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "Windows 10",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "Windows 10",
                     "resolution": "2560x1440"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "MacOS Big",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,1440x900"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "MacOS Big",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,1920x1080"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "MacOS Big",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,2560x1440"
                 },
                 {
-                    "browsername": "Safari",
-                    "browserversion": "14.0",
-                    "system": "MacOS Big",
+                    "browserName": "Safari",
+                    "version": "14.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,1440x900"
                 },
                 {
-                    "browsername": "Safari",
-                    "browserversion": "14.0",
-                    "system": "MacOS Big",
+                    "browserName": "Safari",
+                    "version": "14.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,1920x1080"
                 },
                 {
-                    "browsername": "Safari",
-                    "browserversion": "14.0",
-                    "system": "MacOS Big",
+                    "browserName": "Safari",
+                    "version": "14.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,2560x1440"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "MacOS Big",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,1440x900"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "MacOS Big",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,1920x1080"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "MacOS Big",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "MacOS Big",
                     "resolution": "sur,2560x1440"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "MacOS Catalina",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "MacOS Catalina",
                     "resolution": "1440x900"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "MacOS Catalina",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "MacOS Catalina",
                     "resolution": "1920x1080"
                 },
                 {
-                    "browsername": "Chrome",
-                    "browserversion": "89.0",
-                    "system": "MacOS Catalina",
+                    "browserName": "Chrome",
+                    "version": "89.0",
+                    "platform": "MacOS Catalina",
                     "resolution": "2560x1440"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "MacOS Catalina",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "MacOS Catalina",
                     "resolution": "1440x900"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "MacOS Catalina",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "MacOS Catalina",
                     "resolution": "1920x1080"
                 },
                 {
-                    "browsername": "Firefox",
-                    "browserversion": "86.0",
-                    "system": "MacOS Catalina",
+                    "browserName": "Firefox",
+                    "version": "86.0",
+                    "platform": "MacOS Catalina",
                     "resolution": "2560x1440"
                 }
             ],
