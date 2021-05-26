@@ -22,6 +22,7 @@ browser_targets = [
         "resolution": "1440x900"
     }
 ]
+# browser_targets = py.config.custom['capabilities']['desktop']
 
 
 @pytest.mark.parametrize('browser', browser_targets)
