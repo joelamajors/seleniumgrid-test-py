@@ -24,7 +24,6 @@ browser_targets = [
 ]
 # browser_targets = py.config.custom['capabilities']['desktop']
 
-
 @pytest.mark.parametrize('browser', browser_targets)
 def test_google_search(py: Pylenium, browser):
     py.config.driver.capabilities.update(browser)
