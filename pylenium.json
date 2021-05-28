@@ -6,12 +6,10 @@
         "page_load_wait_time": 0,
         "options": [],
         "capabilities": {
-            "build": "PyTest Build Testing",
+            "build": "Pylenium-Pytest Multi",
             "name": "PyTest Build Testing run",
-            "platform": "macOS Sierra",
-            "browserName": "Edge",
-            "version": "85",
-            "resolution": "1920x1080"
+            "visual": true,
+            "console": true
         },
         "version": "latest",
         "experimental_options": null,
@@ -20,7 +18,7 @@
     },
     "logging": {
         "screenshots_on": true,
-        "pylog_level": "info"
+        "pylog_level": "debug"
     },
     "viewport": {
         "maximize": true,
@@ -29,7 +27,12 @@
         "orientation": "portrait"
     },
     "custom": {
-        "urls": [],
+        "urls": [
+            "https://ntg.hatfield.marketing", 
+            "https://ntg.hatfield.marketing/about",
+            "https://ntg.hatfield.marketing/analysis",
+            "https://ntg.hatfield.marketing/safety"
+        ],
         "capabilities": {
             "desktop": [
                 {
@@ -42,187 +45,7 @@
                     "browserName": "Chrome",
                     "version": "89.0",
                     "platform": "Windows 10",
-                    "resolution": "1366x768"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "Windows 10",
                     "resolution": "1440x900"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "1920x1080"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "2560x1440"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "1366x768"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "1440x900"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "1920x1080"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "2560x1440"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "88.0",
-                    "platform": "Windows 10",
-                    "resolution": "1366x768"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "88.0",
-                    "platform": "Windows 10",
-                    "resolution": "1440x900"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "88.0",
-                    "platform": "Windows 10",
-                    "resolution": "1920x1080"
-                },
-                {
-                    "browserName": "MicrosoftEdge",
-                    "version": "88.0",
-                    "platform": "Windows 10",
-                    "resolution": "2560x1440"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "Windows 10",
-                    "resolution": "1366x768"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "Windows 10",
-                    "resolution": "1440x900"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "Windows 10",
-                    "resolution": "1920x1080"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "Windows 10",
-                    "resolution": "2560x1440"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,1440x900"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,1920x1080"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,2560x1440"
-                },
-                {
-                    "browserName": "Safari",
-                    "version": "14.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,1440x900"
-                },
-                {
-                    "browserName": "Safari",
-                    "version": "14.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,1920x1080"
-                },
-                {
-                    "browserName": "Safari",
-                    "version": "14.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,2560x1440"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,1440x900"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,1920x1080"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "MacOS Big",
-                    "resolution": "sur,2560x1440"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "MacOS Catalina",
-                    "resolution": "1440x900"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "MacOS Catalina",
-                    "resolution": "1920x1080"
-                },
-                {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "MacOS Catalina",
-                    "resolution": "2560x1440"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "MacOS Catalina",
-                    "resolution": "1440x900"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "MacOS Catalina",
-                    "resolution": "1920x1080"
-                },
-                {
-                    "browserName": "Firefox",
-                    "version": "86.0",
-                    "platform": "MacOS Catalina",
-                    "resolution": "2560x1440"
                 }
             ],
             "mobile": [
