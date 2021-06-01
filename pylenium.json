@@ -6,10 +6,11 @@
         "page_load_wait_time": 0,
         "options": [],
         "capabilities": {
-            "build": "Pylenium-Pytest Multi",
+            "build": "MOBILE-Pylenium-Pytest",
             "name": "PyTest Build Testing run",
             "visual": true,
-            "console": true
+            "console": true,
+            "network": true
         },
         "version": "latest",
         "experimental_options": null,
@@ -28,9 +29,8 @@
     },
     "custom": {
         "urls": [
-            "https://ntg.hatfield.marketing", 
+            "https://ntg.hatfield.marketing",
             "https://ntg.hatfield.marketing/about",
-            "https://ntg.hatfield.marketing/analysis",
             "https://ntg.hatfield.marketing/safety"
         ],
         "capabilities": {
@@ -50,40 +50,10 @@
             ],
             "mobile": [
                 {
-                    "name": "iOS",
+                    "platformName": "iOS",
                     "deviceName": "iPhone 12",
                     "platformVersion": "14.2",
                     "appiumVersion": "1.19.1"
-                },
-                {
-                    "name": "iOS",
-                    "deviceName": "iPhone 11",
-                    "platformVersion": "14.2",
-                    "appiumVersion": "1.19.1"
-                },
-                {
-                    "name": "iOS",
-                    "deviceName": "iPhone XS",
-                    "platformVersion": "14.2",
-                    "appiumVersion": "1.19.1"
-                },
-                {
-                    "name": "iOS",
-                    "deviceName": "iPhone SE",
-                    "platformVersion": "14.2",
-                    "appiumVersion": "1.19.1"
-                },
-                {
-                    "name": "Android",
-                    "deviceName": "Galaxy S20 Plus",
-                    "platformVersion": "10",
-                    "appiumVersion": "1.17.1"
-                },
-                {
-                    "name": "Android",
-                    "deviceName": "Galaxy Note 10 Plus",
-                    "platformVersion": "10",
-                    "appiumVersion": "1.17.1"
                 }
             ]
         }
