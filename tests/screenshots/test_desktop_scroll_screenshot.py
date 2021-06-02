@@ -14,8 +14,6 @@ urls = data["custom"]["urls"]
 browser_targets = data["custom"]["capabilities"]["desktop"]
 
 
-
-
 def get_url(py, url):
     py.visit(url)
 
@@ -74,12 +72,15 @@ def scroll_and_screenshot(py, url, browser_name, browser_version, browser_platfo
 @pytest.mark.parametrize('browser', browser_targets)
 def test_scroll_down_on_page(py: Pylenium, url, browser):
     py.config.driver.capabilities.update(browser)
-    
+    print('\n')
+    print(f'CURRENT URL: {url}')
+
     browser_name = browser["browserName"]
     browser_version = browser["version"]
     browser_platform = browser["platform"]
     browser_resolution = browser["resolution"]
-    print(browser_targets)
+    
+    print(f'CURRENT BROWSER: \n{browser_name}, \n{browser_version}, \n{browser_platform}, \n{browser_resolution}')
 
     get_url(py, url)
 

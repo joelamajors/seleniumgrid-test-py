@@ -1,24 +1,24 @@
 {
     "driver": {
-        "browser": "chrome",
         "remote_url": "",
         "wait_time": 10,
         "page_load_wait_time": 0,
         "options": [],
         "capabilities": {
-            "build": "MOBILE-Pylenium-Pytest",
+            "build": "THIS ONE JEFF",
             "name": "PyTest Build Testing run",
-            "visual": true,
             "console": true,
-            "network": true
+            "network": true,
+            "video": true, 
+            "visual": true 
+            
         },
-        "version": "latest",
         "experimental_options": null,
         "extension_paths": [],
         "local_path": ""
     },
     "logging": {
-        "screenshots_on": true,
+        "screenshots_on": false,
         "pylog_level": "debug"
     },
     "viewport": {
@@ -29,23 +29,21 @@
     },
     "custom": {
         "urls": [
-            "https://ntg.hatfield.marketing",
-            "https://ntg.hatfield.marketing/about",
-            "https://ntg.hatfield.marketing/safety"
+            "https://ntg.hatfield.marketing"
         ],
         "capabilities": {
             "desktop": [
                 {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "1366x768"
+                    "browserName": "Safari",
+                    "version": "14.0",
+                    "platform": "MacOS Big sur",
+                    "resolution": "2560x1440"
                 },
                 {
-                    "browserName": "Chrome",
-                    "version": "89.0",
-                    "platform": "Windows 10",
-                    "resolution": "1440x900"
+                    "browserName": "Safari",
+                    "version": "14.0",
+                    "platform": "MacOS Big sur",
+                    "resolution": "1920x1080"
                 }
             ],
             "mobile": [
@@ -53,7 +51,15 @@
                     "platformName": "iOS",
                     "deviceName": "iPhone 12",
                     "platformVersion": "14.2",
-                    "appiumVersion": "1.19.1"
+                    "appiumVersion": "1.19.1",
+                    "w3c": true
+                },
+                {
+                    "platformName": "Android",
+                    "deviceName": "Galaxy S20 Plus",
+                    "platformVersion": "10",
+                    "appiumVersion": "1.17.1",
+                    "w3c": true
                 }
             ]
         }

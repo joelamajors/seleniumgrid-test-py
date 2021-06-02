@@ -7,12 +7,13 @@ from pylenium.driver import Pylenium
 import json
 
 
+
+
 # Importing JSON file to get URLs and caps
 f = open('./pylenium.json')
 data = json.loads(f.read())
 urls = data["custom"]["urls"]
 device_targets = data["custom"]["capabilities"]["mobile"]
-print(device_targets)
 
 
 def get_url(py, url):
@@ -64,6 +65,7 @@ def test_scroll_down_on_page(py: Pylenium, url, device):
     device_platform = device["platformVersion"]
     appium_version = device["appiumVersion"]
 
+    print(f'\nCurrent Browser:\nDevice Name: {device_name}\nDevice Type: {device_type}\nPlatform Version: {device_platform}\nAppium Version: {appium_version}\nURL: {url}')
     get_url(py, url)
 
     scroll_and_screenshot(py, url, device_name, device_type, device_platform, appium_version)
