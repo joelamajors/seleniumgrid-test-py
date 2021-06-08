@@ -2,7 +2,7 @@
 .pytest_cache
 .DS_Store
 __pycache__/
-
+screenshots*
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
