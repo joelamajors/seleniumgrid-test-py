@@ -5,6 +5,9 @@ import os
 from os import path
 
 
+with open("./pylenium.json", "r") as caps:
+    caps_loaded = json.load(caps)
+
 # Importing JSON file to get URLs and caps
 f = open('./pylenium.json')
 data = json.loads(f.read())
@@ -37,7 +40,7 @@ def scroll_and_screenshot(py,
     page_name = page_name[page_name_int]
 
     # ~~~ setup path for method of saving tests ~~~
-    full_path = f'screenshots/desktop/{page_name}/{browser_platform}/{browser_name}{browser_version}'
+    full_path = f'screenshots/desktop/{page_name}/{browser_platform}/{browser_name}_{browser_version}'
 
     # Making file name
     file_name = f'{browser_name}_{browser_resolution}'
