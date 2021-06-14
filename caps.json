@@ -1,0 +1,34 @@
+{
+    "caps": {
+        "desktop": [
+            {
+                "browserName": "Safari",
+                "version": "14.0",
+                "platform": "MacOS Big sur",
+                "resolution": "2560x1440"
+            },
+            {
+                "browserName": "Safari",
+                "version": "14.0",
+                "platform": "MacOS Big sur",
+                "resolution": "1920x1080"
+            }
+        ],
+        "mobile": [
+            {
+                "platformName": "iOS",
+                "deviceName": "iPhone 12",
+                "platformVersion": "14.2",
+                "appiumVersion": "1.19.1",
+                "w3c": true
+            },
+            {
+                "platformName": "Android",
+                "deviceName": "Galaxy S20 Plus",
+                "platformVersion": "10",
+                "appiumVersion": "1.17.1",
+                "w3c": true
+            }
+        ]
+    }
+}

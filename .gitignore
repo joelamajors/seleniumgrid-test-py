@@ -1,7 +1,3 @@
-.vscode
-.pytest_cache
-.DS_Store
-__pycache__/
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
@@ -154,8 +150,5 @@ Thumbs.db
 # profiling data
 .prof
 
-/myenv
-
-__pycache__/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
