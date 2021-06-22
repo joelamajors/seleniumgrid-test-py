@@ -40,7 +40,10 @@ def scroll_and_screenshot(py,
     page_name = page_name[page_name_int]
 
     # ~~~ setup path for method of saving tests ~~~
-    full_path = f'screenshots/desktop/{page_name}/{browser_platform}/{browser_name}_{browser_version}'
+    full_path = f'screenshots/desktop/\
+                {page_name}/\
+                {browser_platform}/\
+                {browser_name}_{browser_version}'
 
     # Making file name
     file_name = f'{browser_name}_{browser_resolution}'

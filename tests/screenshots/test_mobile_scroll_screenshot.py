@@ -6,9 +6,6 @@ import pytest
 from pylenium.driver import Pylenium
 import json
 
-
-
-
 # Importing JSON file to get URLs and caps
 f = open('./pylenium.json')
 data = json.loads(f.read())
@@ -18,6 +15,7 @@ device_targets = data["custom"]["capabilities"]["mobile"]
 
 def get_url(py, url):
     py.visit(url)
+
 
 # Scrolls and takes a screenshot. This might changes depending on how we want to retreive the screenshots once in AWS
 def scroll_and_screenshot(py, url, device_name, device_type, device_platform, appium_version):
@@ -31,10 +29,10 @@ def scroll_and_screenshot(py, url, device_name, device_type, device_platform, ap
     # Number of scrolls
     scroll_amount = round(int(page_height) / int(device_height))
 
-    scroll = 1  
+    scroll = 1
 
     # added conditional for URL
-    if "https" in py.url(): 
+    if "https" in py.url():
         page_name = url.strip('https://').replace('.hatfield.marketing', '').rstrip("/").split("/")
     else:
         page_name = url.strip('http://').replace('.hatfield.marketing', '').rstrip("/").split("/")
@@ -45,10 +43,10 @@ def scroll_and_screenshot(py, url, device_name, device_type, device_platform, ap
     # # Parse the returned page_name to see if this contains any slashes. Get the last one
     page_name_int = len(page_name) - 1
     page_name = page_name[page_name_int]
-    
+
     while scroll < scroll_amount:
 
-        # Scroll to device_height Y coordinate. Gets this via device_height * the number of scroll this is on. 
+        # Scroll to device_height Y coordinate. Gets this via device_height * the number of scroll this is on.
         py.scroll_to(0, (device_height*scroll))
 
         # device_height += device_height

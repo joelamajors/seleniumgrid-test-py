@@ -1,0 +1,57 @@
+{
+    "url": "https://www.lambdatest.com",
+    "defer_time": 5,
+    "email": true,
+    "mac_res": "1920x1080",
+    "win_res": "1920x1080",
+    "smart_scroll": true,
+    "layout": "portrait",
+    "configs": {
+        "windows 10": {
+            "chrome": [
+                "90"
+            ],
+            "firefox": [
+                "88"
+            ],
+            "edge": [
+                "90"
+            ]
+        },
+        "macos big sur": {
+            "chrome": [
+                "90"
+            ],
+            "firefox": [
+                "88"
+            ],
+            "safari": [
+                "14"
+            ]
+        },
+        "ios 13.4": {
+            "devices": [
+                "iphone xs",
+                "iphone 11"
+            ]
+        },
+        "android 9.0": {
+            "devices": [
+                "galaxy s10 plus",
+                "galaxy s10"
+            ]
+        }
+    },
+    "custom": {
+        "urls": [
+            "https://ntg.hatfield.marketing/",
+            "https://ntg.hatfield.marketing/about",
+            "https://ntg.hatfield.marketing/analysis",
+            "https://ntg.hatfield.marketing/contact",
+            "https://ntg.hatfield.marketing/infrared-scanning",
+            "https://ntg.hatfield.marketing/safety",
+            "https://ntg.hatfield.marketing/testing",
+            "https://ntg.hatfield.marketing/what-we-do"
+        ]
+    }
+}

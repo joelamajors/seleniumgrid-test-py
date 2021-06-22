@@ -5,13 +5,12 @@
         "page_load_wait_time": 0,
         "options": [],
         "capabilities": {
-            "build": "THIS ONE JEFF",
+            "build": "WCHS post-launch tests",
             "name": "PyTest Build Testing run",
             "console": true,
             "network": true,
-            "video": true, 
-            "visual": true 
-            
+            "video": true,
+            "visual": true
         },
         "experimental_options": null,
         "extension_paths": [],
@@ -29,20 +28,34 @@
     },
     "custom": {
         "urls": [
-            "https://ntg.hatfield.marketing"
+            "https://wchorseshow.hatfield.marketing",
+            "https://wchorseshow.hatfield.marketing/about",
+            "https://wchorseshow.hatfield.marketing/advertising",
+            "https://wchorseshow.hatfield.marketing/contact",
+            "https://wchorseshow.hatfield.marketing/directions",
+            "https://wchorseshow.hatfield.marketing/divisions",
+            "https://wchorseshow.hatfield.marketing/hall-of-fame",
+            "https://wchorseshow.hatfield.marketing/hatfield-media",
+            "https://wchorseshow.hatfield.marketing/history",
+            "https://wchorseshow.hatfield.marketing/live-streaming",
+            "https://wchorseshow.hatfield.marketing/news",
+            "https://wchorseshow.hatfield.marketing/privacy-policy",
+            "https://wchorseshow.hatfield.marketing/prizelist",
+            "https://wchorseshow.hatfield.marketing/registrations",
+            "https://wchorseshow.hatfield.marketing/schedule"
         ],
         "capabilities": {
             "desktop": [
                 {
-                    "browserName": "Safari",
-                    "version": "14.0",
-                    "platform": "MacOS Big sur",
-                    "resolution": "2560x1440"
+                    "platform": "Windows 10",
+                    "browserName": "Chrome",
+                    "version": "91.0",
+                    "resolution": "1920x1080"
                 },
                 {
+                    "platform": "MacOS Big sur",
                     "browserName": "Safari",
                     "version": "14.0",
-                    "platform": "MacOS Big sur",
                     "resolution": "1920x1080"
                 }
             ],
