@@ -15,6 +15,9 @@ class TestScreenshots:
     def test_screenshots(self, driver, url):
         driver.get(url)
 
+        if "appiumVersion" in driver.browser_config:
+            driver.implicit_wait(10)
+
         # Full document height
         doc_height = round(int(
             driver.execute_script("return document.body.scrollHeight")))
