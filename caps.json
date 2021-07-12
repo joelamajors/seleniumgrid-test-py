@@ -2,16 +2,130 @@
     "caps": {
         "desktop": [
             {
-                "browserName": "Safari",
-                "version": "14.0",
-                "platform": "MacOS Big sur",
+                "platform": "Windows 10",
+                "browserName": "Chrome",
+                "version": "91.0",
+                "resolution": "1366x768"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "Chrome",
+                "version": "91.0",
+                "resolution": "1440x900"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "Chrome",
+                "version": "91.0",
+                "resolution": "1920x1080"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "Chrome",
+                "version": "91.0",
                 "resolution": "2560x1440"
             },
             {
+                "platform": "Windows 10",
+                "browserName": "Firefox",
+                "version": "89.0",
+                "resolution": "1366x768"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "Firefox",
+                "version": "89.0",
+                "resolution": "1440x900"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "Firefox",
+                "version": "89.0",
+                "resolution": "1920x1080"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "Firefox",
+                "version": "89.0",
+                "resolution": "2560x1440"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "MicrosoftEdge",
+                "version": "91.0",
+                "resolution": "1366x768"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "MicrosoftEdge",
+                "version": "91.0",
+                "resolution": "1440x900"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "MicrosoftEdge",
+                "version": "91.0",
+                "resolution": "1920x1080"
+            },
+            {
+                "platform": "Windows 10",
+                "browserName": "MicrosoftEdge",
+                "version": "91.0",
+                "resolution": "2560x1440"
+            },
+            {
+                "platform": "MacOS Big sur",
+                "browserName": "Chrome",
+                "version": "91.0",
+                "resolution": "1440x900"
+            },
+            {
+                "platform": "MacOS Big sur",
+                "browserName": "Chrome",
+                "version": "91.0",
+                "resolution": "1920x1080"
+            },
+            {
+                "platform": "MacOS Big sur",
+                "browserName": "Chrome",
+                "version": "91.0",
+                "resolution": "2560x1440"
+            },
+            {
+                "platform": "MacOS Big sur",
                 "browserName": "Safari",
                 "version": "14.0",
+                "resolution": "1440x900"
+            },
+            {
                 "platform": "MacOS Big sur",
+                "browserName": "Safari",
+                "version": "14.0",
                 "resolution": "1920x1080"
+            },
+            {
+                "platform": "MacOS Big sur",
+                "browserName": "Safari",
+                "version": "14.0",
+                "resolution": "2560x1440"
+            },
+            {
+                "platform": "MacOS Big sur",
+                "browserName": "Firefox",
+                "version": "89.0",
+                "resolution": "1440x900"
+            },
+            {
+                "platform": "MacOS Big sur",
+                "browserName": "Firefox",
+                "version": "89.0",
+                "resolution": "1920x1080"
+            },
+            {
+                "platform": "MacOS Big sur",
+                "browserName": "Firefox",
+                "version": "89.0",
+                "resolution": "2560x1440"
             }
         ],
         "mobile": [
@@ -19,12 +133,40 @@
                 "platformName": "iOS",
                 "deviceName": "iPhone 12",
                 "platformVersion": "14.2",
-                "appiumVersion": "1.19.1",
+                "appiumVersion": "1.21.0",
+                "w3c": true
+            },
+            {
+                "platformName": "iOS",
+                "deviceName": "iPhone 11",
+                "platformVersion": "14.2",
+                "appiumVersion": "1.21.0",
+                "w3c": true
+            },
+            {
+                "platformName": "iOS",
+                "deviceName": "iPhone XS",
+                "platformVersion": "14.2",
+                "appiumVersion": "1.21.0",
+                "w3c": true
+            },
+            {
+                "platformName": "iOS",
+                "deviceName": "iPhone SE",
+                "platformVersion": "14.2",
+                "appiumVersion": "1.21.0",
                 "w3c": true
             },
             {
                 "platformName": "Android",
-                "deviceName": "Galaxy S20 Plus",
+                "deviceName": "Galaxy S20",
+                "platformVersion": "10",
+                "appiumVersion": "1.17.1",
+                "w3c": true
+            },
+            {
+                "platformName": "Android",
+                "deviceName": "Galaxy Note 10 Plus",
                 "platformVersion": "10",
                 "appiumVersion": "1.17.1",
                 "w3c": true
