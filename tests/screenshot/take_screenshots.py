@@ -6,10 +6,13 @@ from os import path
 from _pytest import config
 import json
 
+
 # Importing JSON file to get URLs and caps
-f = open('./urls.json')
-data = json.loads(f.read())
+with open("urls.json", "r") as read_file:
+    data = json.load(read_file)
+
 urls = data["urls"]
+
 
 @pytest.mark.usefixtures('driver')
 class TestScreenshots:
@@ -21,7 +24,7 @@ class TestScreenshots:
         :return: None
         """
         driver.get(url)
-        
+
         # Assigning page_name variable
         name = None
 
@@ -33,10 +36,9 @@ class TestScreenshots:
 
         # Parse the returned page_name to see if this contains any slashes.
         # Get the last one
-
         page_names = name[len(name)-1].split('/')
         page_name = page_names[len(page_names)-1]
-    
+
         # Height of the whole document
         document_height = round(int(driver.execute_script("return document.body.scrollHeight")))
 
