@@ -101,7 +101,7 @@ def driver(request, browser_config):
     )
 
     if browser is not None:
-        print("LambdaTestSessionID={} TestName={} ".format(
+        print("\nLambdaTestSessionID={} TestName={} ".format(
             browser.session_id, test_name)
             + datetime.now().strftime('%H:%M:%S'))
     else:
