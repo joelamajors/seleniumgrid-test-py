@@ -12,11 +12,11 @@ urls = data["urls"]
 class TestScreenshots:
 
     @pytest.mark.parametrize('url', urls)
-    def test_screenshots(self, driver, url):
+    def test_screenshots(self, driver, browser_config, url):
         driver.get(url)
 
-        if "appiumVersion" in driver.browser_config:
-            driver.implicit_wait(10)
+        if 'appiumVersion' in browser_config:
+            driver.implicitly_wait(10)
 
         # Full document height
         doc_height = round(int(
