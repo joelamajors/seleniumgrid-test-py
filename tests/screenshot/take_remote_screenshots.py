@@ -16,14 +16,14 @@ class TestScreenshots:
         driver.get(url)
 
         if 'appiumVersion' in browser_config:
-            driver.implicitly_wait(10)
+            driver.implicitly_wait(3)
 
         # Full document height
         doc_height = round(int(
             driver.execute_script("return document.body.scrollHeight")))
 
         # Cutting down device height to prevent overscroll
-        device_height = round(int(driver.get_window_size()['height'] * .6))
+        device_height = round(int(driver.get_window_size()['height'] / 2))
 
         # determining number of scrolls
         scroll_amount = round(int(doc_height) / int(device_height))
