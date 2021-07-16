@@ -21,12 +21,6 @@
             },
             {
                 "platform": "Windows 10",
-                "browserName": "Chrome",
-                "version": "91.0",
-                "resolution": "2560x1440"
-            },
-            {
-                "platform": "Windows 10",
                 "browserName": "Firefox",
                 "version": "89.0",
                 "resolution": "1366x768"
@@ -42,12 +36,6 @@
                 "browserName": "Firefox",
                 "version": "89.0",
                 "resolution": "1920x1080"
-            },
-            {
-                "platform": "Windows 10",
-                "browserName": "Firefox",
-                "version": "89.0",
-                "resolution": "2560x1440"
             },
             {
                 "platform": "Windows 10",
@@ -68,12 +56,6 @@
                 "resolution": "1920x1080"
             },
             {
-                "platform": "Windows 10",
-                "browserName": "MicrosoftEdge",
-                "version": "91.0",
-                "resolution": "2560x1440"
-            },
-            {
                 "platform": "MacOS Big sur",
                 "browserName": "Chrome",
                 "version": "91.0",
@@ -84,12 +66,6 @@
                 "browserName": "Chrome",
                 "version": "91.0",
                 "resolution": "1920x1080"
-            },
-            {
-                "platform": "MacOS Big sur",
-                "browserName": "Chrome",
-                "version": "91.0",
-                "resolution": "2560x1440"
             },
             {
                 "platform": "MacOS Big sur",
@@ -105,12 +81,6 @@
             },
             {
                 "platform": "MacOS Big sur",
-                "browserName": "Safari",
-                "version": "14.0",
-                "resolution": "2560x1440"
-            },
-            {
-                "platform": "MacOS Big sur",
                 "browserName": "Firefox",
                 "version": "89.0",
                 "resolution": "1440x900"
@@ -120,12 +90,6 @@
                 "browserName": "Firefox",
                 "version": "89.0",
                 "resolution": "1920x1080"
-            },
-            {
-                "platform": "MacOS Big sur",
-                "browserName": "Firefox",
-                "version": "89.0",
-                "resolution": "2560x1440"
             }
         ],
         "mobile": [
