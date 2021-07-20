@@ -12,13 +12,12 @@ urls = data["urls"]
 class TestScreenshots:
 
     @pytest.mark.parametrize('url', urls)
-    def test_screenshots(self, driver, browser_config, url):
+    def test_screenshots(self, driver, url, browser_config):
         driver.get(url)
 
         if 'appiumVersion' in browser_config:
             driver.implicitly_wait(3)
 
-        # Full document height
         doc_height = round(int(
             driver.execute_script("return document.body.scrollHeight")))
 
