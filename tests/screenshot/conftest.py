@@ -11,7 +11,7 @@ import urllib3
 urllib3.disable_warnings()
 
 # Importing JSON file to get URLs and caps
-with open("urls.json", "r") as read_file:
+with open("./urls.json", "r") as read_file:
     data = json.load(read_file)
 
 urls = data["urls"]
@@ -30,8 +30,9 @@ build_date = datetime.now().strftime('%Y%m%d_%H%M%S')
 build_name = f'{site_name[0]}_{build_date}'
 
 # Importing capabilities
-f_caps = open('./caps.json')
-caps_data = json.loads(f_caps.read())
+with open("./caps.json") as read_caps:
+    caps_data = json.load(read_caps)
+
 browsers = []
 browsers.extend(caps_data["caps"]["desktop"])
 browsers.extend(caps_data["caps"]["mobile"])
@@ -54,44 +55,27 @@ def _generate_param_ids(name, values):
 
 
 @pytest.fixture(scope='function')
-def driver(request, browser_config):
-
+def driver(request, browser_config, url):
     desired_caps = dict()
     desired_caps.update(browser_config)
 
-    platform_name = string
-    test_name = string
-
-    if "resolution" in browser_config:
-        platform_name = browser_config["platform"]
-        test_name = f'{platform_name}'\
-                    + '_'\
-                    + f'{browser_config["browserName"]}'\
-                    + '_'\
-                    + f'{browser_config["resolution"]}'
-    else:
-        platform_name = browser_config["deviceName"]
-        test_name = f'{platform_name}'\
-                    + '_'\
-                    + f'{browser_config["platformVersion"]}'\
-                    + '_'\
-                    + f'{browser_config["appiumVersion"]}'\
-
     # This needs to be adjusted to use the URL
-    build = build_name
     tunnel_id = environ.get('LT_TUNNEL', False)
     username = environ.get('LT_USERNAME', None)
     access_key = environ.get('LT_ACCESS_KEY', None)
 
     selenium_endpoint = "http://{}:{}@hub.lambdatest.com/wd/hub".format(
         username, access_key)
-    desired_caps['build'] = build
 
+    build = build_name
+    desired_caps['name'] = url
+    desired_caps['build'] = build
     desired_caps['tunnel'] = tunnel_id
-    desired_caps['name'] = test_name
     desired_caps['visual'] = True
     desired_caps['network'] = True
     desired_caps['console'] = True
+
+    print(desired_caps)
 
     executor = RemoteConnection(selenium_endpoint, resolve_ip=False)
     browser = webdriver.Remote(
@@ -101,9 +85,8 @@ def driver(request, browser_config):
     )
 
     if browser is not None:
-        print("\nLambdaTestSessionID={} TestName={} ".format(
-            browser.session_id, test_name)
-            + datetime.now().strftime('%H:%M:%S'))
+        print(f'\nLambdaTestSessionID={browser.session_id} '
+                + datetime.now().strftime('%H:%M:%S'))
     else:
         raise WebDriverException("Never created!")
 
