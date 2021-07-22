@@ -34,8 +34,7 @@ with open("./caps.json") as read_caps:
     caps_data = json.load(read_caps)
 
 browsers = []
-browsers.extend(caps_data["caps"]["desktop"])
-browsers.extend(caps_data["caps"]["mobile"])
+browsers.extend(caps_data["caps"])
 
 
 def pytest_generate_tests(metafunc):
@@ -74,6 +73,8 @@ def driver(request, browser_config, url):
     desired_caps['visual'] = True
     desired_caps['network'] = True
     desired_caps['console'] = True
+    desired_caps['browserstack.debug'] = True
+    desired_caps['browserstack.debug'] = True
 
     print(desired_caps)
 
