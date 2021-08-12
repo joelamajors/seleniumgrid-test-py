@@ -1,8 +1,8 @@
 #!/bin/bash
-#source /home/ssm-user/scripts/lambdatest-py/venv/bin/activate
 
 # this script will do the following
-#  - Download the updated S3 bucket file via AWS CLI
+#  - Parses AWS key and sets this as environment variables
+#  - Downloads the updated urls.json from the S3 bucket via AWS CLI
 #  - Run the Python command to start the tests
 
 # Hitting AWS CLI to get the secret value
