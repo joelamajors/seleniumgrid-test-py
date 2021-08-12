@@ -1,5 +1,6 @@
 import pytest
 import json
+import requests
 
 # Importing JSON file to get URLs and caps
 with open("urls.json", "r") as read_file:
@@ -13,6 +14,13 @@ class TestScreenshots:
 
     @pytest.mark.parametrize('url', urls)
     def test_screenshots(self, driver, url, browser_config):
+
+        try:        
+            r = requests.get(url)
+            assert r.status_code != 404
+        except:
+            pytest.fail(f"Response code is not a 200")
+
         driver.get(url)
 
         if 'appiumVersion' in browser_config:
