@@ -7,7 +7,6 @@ from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.remote.remote_connection import RemoteConnection
 import urllib3
-import boto3
 
 urllib3.disable_warnings()
 
